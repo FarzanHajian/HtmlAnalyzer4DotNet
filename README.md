@@ -1,7 +1,7 @@
 HtmlAnalyzer4DotNet
 ===================
 
-An experimental project to see can be acheived when combining NSoup and ExCss libraries.
+An experimental project to find out what can be achieved when combining NSoup and ExCss libraries.
 
 The tool can fetch HTML documents from the URLs you specify and provide you with a couple of
 different categories of information about the HTML document.
