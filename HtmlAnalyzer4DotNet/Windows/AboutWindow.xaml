@@ -1,0 +1,31 @@
+﻿<Window x:Class="HtmlAnalyzer4DotNet.Windows.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="About..." Height="350" Width="500" KeyDown="AboutWindow_OnKeyDown"
+        WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Label FontSize="36" FontStyle="Italic" HorizontalContentAlignment="Center" Grid.Row="0">HtmlAnalyzer4DotNet</Label>
+        <TextBlock Grid.Row="1">
+            Version 0.1.0.0 <LineBreak />
+            Copyright © 2014 Farzan Hajian <LineBreak />
+            <LineBreak />
+            This program is free software: you can redistribute it and/or modify <LineBreak />
+            it under the terms of the GNU General Public License as published by <LineBreak />
+            the Free Software Foundation, either version 3 of the License, or <LineBreak />
+            (at your option) any later version. <LineBreak />
+            <LineBreak />
+            This program is distributed in the hope that it will be useful, <LineBreak />
+            but WITHOUT ANY WARRANTY; without even the implied warranty of <LineBreak />
+            MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the <LineBreak />
+            GNU General Public License for more details. <LineBreak />
+            <LineBreak />
+            You should have received a copy of the GNU General Public License <LineBreak />
+            along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+        </TextBlock>
+    </Grid>
+</Window>

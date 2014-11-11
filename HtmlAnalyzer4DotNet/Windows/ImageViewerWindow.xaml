@@ -1,0 +1,10 @@
+﻿<Window x:Class="HtmlAnalyzer4DotNet.Windows.ImageViewerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="" Height="300" Width="300" KeyDown="ImageViewerWindow_OnKeyDown"
+        WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow"
+        Loaded="ImageViewerWindow_OnLoaded">
+    <Grid>
+        <Image x:Name="img"></Image>
+    </Grid>
+</Window>

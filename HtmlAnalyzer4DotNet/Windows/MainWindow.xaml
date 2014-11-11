@@ -1,0 +1,38 @@
+﻿<Window x:Class="HtmlAnalyzer4DotNet.Windows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="HtmlAnalyzer4DotNet" Height="700" Width="1050" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25px" />
+            <RowDefinition Height="25px" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Menu HorizontalAlignment="Stretch" Height="100" Grid.Row="0" VerticalAlignment="Top">
+            <MenuItem Header="_File">
+                <MenuItem x:Name="mnuFetch" Header="Fe_tch" Click="MenuItem_OnClick" />
+                <MenuItem x:Name="mnuExit" Header="E_xit" Click="MenuItem_OnClick" />
+            </MenuItem>
+            <MenuItem Header="_Help">
+                <MenuItem x:Name="mnuAbout" Header="_About" Click="MenuItem_OnClick" />
+            </MenuItem>
+        </Menu>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="100" />
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="txtUrl" Grid.Column="0">http://</TextBox>
+            <Button x:Name="btnFetch" Grid.Column="1" Content="Fetch" IsDefault="True" Click="btnFetch_Click" />
+        </Grid>
+        <TabControl Grid.Row="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <TabItem Header="Parsed Data">
+                <TreeView x:Name="treeParseData" />
+            </TabItem>
+            <TabItem Header="Raw HTML">
+                <TextBox x:Name="txtRawHtml" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
