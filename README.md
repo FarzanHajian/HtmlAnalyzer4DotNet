@@ -14,3 +14,5 @@ Currently the following information categories are supported:
 * List of CSS rules
 * List of images (the ability to fetch and view images is available)
 * HTML raw view
+
+To read more about the project please visit our [CodeProject](http://www.codeproject.com/Tips/845193/Analyzing-HTML-documents-with-ease-An-introduction) web site.
